@@ -64,3 +64,24 @@
     bottom: 0;
     transform: translateX(-50%);
   }
+
+  #timeline div:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    bottom: 5px;
+  }
+
+  #timeline ul li:nth-child(odd) div:before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent var(--secondary-color);
+  }
+
+  #timeline ul li:nth-child(even) div:before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent var(--secondary-color);
+}
